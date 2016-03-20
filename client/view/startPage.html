@@ -1,0 +1,30 @@
+<div class="container container-area">
+    <div class="pt30">
+       <div class="center">
+            <div class="clearfix">
+                <span class="operand">{{task.number1}}</span>
+                <span class="operand">{{task.operatorSign}}</span>
+                <span class="operand">{{task.number2}}</span>
+                <span class="operand"> = </span>
+                <span id="resultPlaceholder" class="operand">?</span>
+                <span id="incorrectResult" class="incorrectResult">{{task.userResult}}</span>
+                <span id="correctResult" class="correctResult">{{task.result}}</span>
+            </div>
+       </div>
+            <!--div>
+                <span id="incorrectResult" class="incorrectResult">{{task.userResult}}</span>
+                <span id="correctResult" class="correctResult">{{task.result}}</span>
+            </div-->
+        <div class="form-group clearfix">
+            <div class="left w-70"><input type="number" class="form-control left" id="userAnswerTaskResult" /></div>
+            <div class="left w-30 pL10"><button type="button" id="checkButton" class="btn btn-success" autocomplete="off">Check result!</button></div>
+        </div>
+        <div class="center">
+            <button type="button" id="nextButton" class="btn btn-success btn-lg" autocomplete="off">Next!</button>
+        </div>
+
+        <div class="center pT10">
+            <span>Solved {{$storage.correctSolvedCounter}} of {{$storage.counter}}</span>
+        </div>
+    </div>
+</div>
