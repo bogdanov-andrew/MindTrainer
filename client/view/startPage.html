@@ -23,6 +23,10 @@
             <button type="button" id="nextButton" class="btn btn-success btn-lg" autocomplete="off">Next!</button>
         </div>
 
+        <div ng-controller="NumericKeyboardController">
+            <div numeric-keyboard></div>
+        </div>
+
         <div class="center pT10">
             <span>Solved {{$storage.correctSolvedCounter}} of {{$storage.counter}}</span>
         </div>

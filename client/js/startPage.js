@@ -1,4 +1,4 @@
-var app = angular.module('startPage', ['ngRoute', 'ngTouch', 'ngStorage']);
+var app = angular.module('startPage', ['ngRoute', 'ngTouch', 'ngStorage', 'NumericKeyboardDirective']);
 app.controller('StartPageController', function($scope, $localStorage){
 
     $scope.$storage = $localStorage;
