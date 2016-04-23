@@ -32,6 +32,11 @@
 	text-decoration: line-through;
 }
 
+.actionButton {
+	height: 60px;
+	width: 80%;
+}
+
 .center {
 	text-align: center;
 }

@@ -1,0 +1,14 @@
+.keypad-style {
+    width: 75%;
+    margin: 0 auto;
+}
+.keypad-btn {
+    width: 100%;
+    height: 65px;
+}
+.keypad-btn-div {
+    margin: 0 auto;
+    padding: 5px;
+    width: 33%
+}
+
