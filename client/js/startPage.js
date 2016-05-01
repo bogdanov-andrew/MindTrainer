@@ -1,6 +1,7 @@
-var app = angular.module('startPage', ['ngRoute', 'ngTouch', 'NumericKeyboardDirective', 'taskGenerationModule', 'taskSolvingModule', 'taskStatisticsModule']);
-app.controller('StartPageController', function($scope, taskGenerationService, taskSolvingService, taskStatisticsService){
+var app = angular.module('startPage', ['ngRoute', 'ngTouch', 'NumericKeyboardDirective', 'taskGenerationModule', 'taskSolvingModule', 'taskStatisticsModule', 'achievementModule']);
+app.controller('StartPageController', function($scope, taskGenerationService, taskSolvingService, taskStatisticsService, achievementService){
     $scope.statistics = taskStatisticsService.getStatistics();
+    $scope.achievements = achievementService.getCurrentLevel();
     $scope.task = {};
     $scope.inputedResultElement = function() { return $('#inputedResult'); };
     $scope.nextButtonElement = function() { return $('#nextButton'); };
@@ -8,6 +9,8 @@ app.controller('StartPageController', function($scope, taskGenerationService, ta
 
     function updateStatistics() {
         $scope.statistics = taskStatisticsService.getStatistics();
+        $scope.level = achievementService.getCurrentLevel();
+        $scope.achievements = achievementService.getCurrentLevel();
     }
 
     function reInitTask(){
