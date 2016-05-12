@@ -1,4 +1,4 @@
-.body { padding-top: 70px; }
+.body { padding-top: 20px; }
 
 @media screen and (max-device-height: 1280px) {
 	body {height: 1200px;}
