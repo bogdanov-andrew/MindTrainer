@@ -1,0 +1,5 @@
+bin
+obj
+/client/*.DotSettings
+/client/*.suo
+/client/*.user
