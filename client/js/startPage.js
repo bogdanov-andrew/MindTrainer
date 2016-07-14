@@ -42,7 +42,7 @@ app.controller('StartPageController', function($scope, taskGenerationService, ta
     $scope.checkButtonElement().on('click', function () {
         var userResult = $scope.inputedResultElement().text();
         clearInputedNumber();
-        var calculatedResult = taskSolvingService.solveTask($scope.task);
+        var calculatedResult = taskSolvingService.solveTask($scope.task.taskDescription);
         $scope.$apply(function(){
             $scope.task.result = calculatedResult;
             $scope.task.userResult = userResult;

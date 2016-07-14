@@ -1,15 +1,13 @@
 <div class="container container-area">
     <div>
        <div class="center">
-            <div class="clearfix">
-                <span class="operand">{{task.number1}}</span>
-                <span class="operand">{{task.operatorSign}}</span>
-                <span class="operand">{{task.number2}}</span>
-                <span class="operand"> = </span>
-                <span id="inputedResult" class="keypad-label operand"></span>
-                <span id="incorrectResult" class="incorrectResult">{{task.userResult}}</span>
-                <span id="correctResult" class="correctResult">{{task.result}}</span>
-            </div>
+           <div class="clearfix">
+               <span class="operand">{{task.taskDescription}}</span>
+               <span class="operand"> = </span>
+               <span id="inputedResult" class="keypad-label operand"></span>
+               <span id="incorrectResult" class="incorrectResult">{{task.userResult}}</span>
+               <span id="correctResult" class="correctResult">{{task.result}}</span>
+           </div>
        </div>
            
         <div class="center w-full pT10" ng-controller="NumericKeyboardController">
