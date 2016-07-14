@@ -11,7 +11,12 @@ function TaskGenerationService() {
     }
 
     function getOperandsNumber() {
-        return getRandomInt(2, 4);
+        var randomNumber = getRandomInt(0, 10);
+        if (randomNumber < 8) {
+            return 3;
+        }
+
+        return 2;
     }
 
     this.generateTask = function() {
