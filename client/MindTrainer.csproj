@@ -79,6 +79,7 @@
     <Content Include="index.html" />
     <Content Include="js\achievementService.js" />
     <Content Include="js\app.js" />
+    <Content Include="js\EventAggregatorService.js" />
     <Content Include="js\external\angularjs\angular-route.js" />
     <Content Include="js\external\angularjs\angular-route.min.js" />
     <Content Include="js\external\angularjs\angular-touch.js" />
